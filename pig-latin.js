@@ -1,12 +1,7 @@
-** start of script.js **
-
 function translatePigLatin(str) {
-  function isVowel(v){
-    return "aeiou".split("").includes(v)
-  };
   let index=str.length;
   for (let x of str){
-    if (isVowel(x)){
+    if ("aeiou".includes(x)){
       index = str.indexOf(x);
       break
     };
@@ -18,6 +13,3 @@ function translatePigLatin(str) {
 };
 
 translatePigLatin("consonant");
-
-** end of script.js **
-
